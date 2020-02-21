@@ -2,10 +2,16 @@ $color-primary: #f26002;
 $color-secondary: #304268;
 $color-secondary-midtone:#0271bc;
 $color-secondary-light:#8ccbea;
+$color-bg-secondary:#eff9ff;
 $color-light: #ffffff; 
+$color-dark: black; 
+$color-medium: #4a4a4a;
 
 $font-family-title: 'Roboto Slab', ;
 $font-family: 'Roboto', ;
+$font-light: 300;
+$font-medium: 500;
+$font-bold: 700;
 
 body{
     font-family: $font-family; 

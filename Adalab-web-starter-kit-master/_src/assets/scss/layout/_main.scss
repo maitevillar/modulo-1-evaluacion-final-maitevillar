@@ -1,15 +1,49 @@
 
-.main-article{
+.article{
     display: block;
     padding-bottom:15px;
 
-    & .main-subtitle {
+    & .m-subtitle {
         width: 90px;
         height: 30px;
         font-size: 14px;
         line-height: 30px;
         color: $color-secondary-light;
+        font-weight: $font-light; 
+        text-transform: capitalize;
     }
-    
 
+    & .m-title{
+        width: 290px;
+        height: 60px;
+        font-size: 24px;
+        line-height: 30px;
+        color: $color-dark;
+        font-weight: $font-bold;
+        text-transform: capitalize;
+        margin-top: 1px;
+        margin-bottom: 15px;
+    }
+
+    & .m-par{
+        height: 120px;
+        font-size: 18px;
+        line-height: 30px;
+        color: $color-medium;
+        margin-bottom: 30px;
+    }
+
+    & .m-button{
+        width: 76px;
+        height: 45px;
+        background-color: $color-light;
+        text-transform: capitalize;
+        color: $color-primary;
+        font-size: 20px;
+        font-weight: $font-medium;
+        border-radius: 22.5px;
+        border: solid 2px $color-primary;
+        
+    }
 }
+

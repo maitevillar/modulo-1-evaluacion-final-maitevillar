@@ -1,1 +1,34 @@
 /* NO OLVIDARSE DEL BOTON CON EL PSEUDOELEMENTO ::BEFORE Y EL z-index PARA QUE QUEDE POR ENCIMA*/
+.page__footer{
+    background-color: $color-secondary;
+
+    & .container{
+
+        & .links_articles {
+            padding-top: 30px;
+            text-align: center;
+            text-transform: uppercase;
+            line-height: 30px;
+            color: $color-light;
+            font-weight: $font-light;
+            font-size: 16px;
+        }
+        
+        & .links-twitter {
+            padding-top: 30px;
+            width: 147;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: $font-light;
+            line-height: 30px;
+            color: $color-light;
+            font-size: 16px;
+            
+        }
+
+        & .f-copy{
+            
+        }
+    }
+}
+

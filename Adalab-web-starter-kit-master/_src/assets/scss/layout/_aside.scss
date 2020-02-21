@@ -1,0 +1,43 @@
+.page__aside{
+    background-color: $color-bg-secondary;
+}
+
+.container-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    & .article{
+        padding-top: 45px;
+        padding-bottom: 0;
+        text-align: center;
+
+        & .a-subtitle{
+            font-size: 18px;
+            line-height: 30px;
+            font-weight: $font-bold;
+        }
+
+        & .a-par{
+            width: 180px;
+            font-size: 18px;
+        }
+    }
+
+    & .buton-aside{
+        width: 184px;
+        height: 45px;
+        background-color: $color-primary;
+        border-radius: 22.5px;
+        border: 0;
+        font-size: 20px;
+        line-height: 45px;
+        font-weight: $font-light;
+        text-transform: capitalize;
+        color: $color-light;
+        text-align: center;
+        margin-top: 45px;  
+        margin-bottom: 30px;
+    }
+}
