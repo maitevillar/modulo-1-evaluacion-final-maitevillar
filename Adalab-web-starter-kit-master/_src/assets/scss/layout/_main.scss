@@ -1,0 +1,15 @@
+
+.main-article{
+    display: block;
+    padding-bottom:15px;
+
+    & .main-subtitle {
+        width: 90px;
+        height: 30px;
+        font-size: 14px;
+        line-height: 30px;
+        color: $color-secondary-light;
+    }
+    
+
+}

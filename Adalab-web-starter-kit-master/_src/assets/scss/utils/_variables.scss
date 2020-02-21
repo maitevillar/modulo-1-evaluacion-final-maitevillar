@@ -1,0 +1,18 @@
+$color-primary: #f26002;
+$color-secondary: #304268;
+$color-secondary-midtone:#0271bc;
+$color-secondary-light:#8ccbea;
+$color-light: #ffffff; 
+
+$font-family-title: 'Roboto Slab', ;
+$font-family: 'Roboto', ;
+
+body{
+    font-family: $font-family; 
+
+    h1, h2, h3{
+        font-family: $font-family-title;
+    }
+}
+
+/* no meter elementos: cambiar el h1 por clases*/

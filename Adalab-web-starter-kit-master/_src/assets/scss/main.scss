@@ -4,7 +4,9 @@
 @import 'utils/variables';
 @import 'utils/mixins';
 
+@import 'layout/structure';
 @import 'layout/header';
+@import 'layout/hero';
 @import 'layout/main';
 @import 'layout/aside';
 @import 'layout/footer';
