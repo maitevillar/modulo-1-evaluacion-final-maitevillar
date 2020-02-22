@@ -2,10 +2,38 @@
 .page__footer{
     background-color: $color-secondary;
 
-    & .container{
+    & .oval{
+        width: 45px;
+        height: 45px;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+        border-radius: 30px;
+        position: relative;
+        top: -52.5px;
+        background-color: $color-light;
+        background-image: url(../images/ico-arrow.svg);
+        background-repeat: no-repeat;
+        background-size: 20.6px 24px;
+        background-position: center;
+        z-index: 10;
+        transition: all 0.1s ease;
+    }
+
+    & .oval:hover {
+        background-size: 16px 20px;
+        cursor: pointer;
+      }
+
+
+    & .container-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 
         & .links_articles {
             padding-top: 30px;
+            margin-top: 0;
+            margin-bottom: 0;
             text-align: center;
             text-transform: uppercase;
             line-height: 30px;
@@ -13,9 +41,12 @@
             font-weight: $font-light;
             font-size: 16px;
         }
+
         
         & .links-twitter {
             padding-top: 30px;
+            margin-top: 0;
+            margin-bottom: 0;
             width: 147;
             text-align: center;
             text-transform: uppercase;
@@ -23,12 +54,32 @@
             line-height: 30px;
             color: $color-light;
             font-size: 16px;
-            
+    
+        }
+
+        & a:hover {
+            font-weight: $font-medium;
+            font-size: 15px;
         }
 
         & .f-copy{
-            
+            display: block;
+            height: 30px;
+            padding-top: 30px;
+            margin-bottom: 0;
+            text-align: center;
+            font-weight: $font-light;
+            color: $color-light;
+        }
+
+        & .welove{
+            display: block;
+            padding: 15px 0 10px 0;
+            line-height: 30px;
+            font-size: 14px;
+            text-align: center;
+            font-weight: $font-light;
+            color: $color-light;
         }
     }
 }
-

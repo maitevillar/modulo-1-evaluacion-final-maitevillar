@@ -36,14 +36,22 @@
     & .m-button{
         width: 76px;
         height: 45px;
-        background-color: $color-light;
         text-transform: capitalize;
         color: $color-primary;
         font-size: 20px;
         font-weight: $font-medium;
         border-radius: 22.5px;
         border: solid 2px $color-primary;
-        
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+        background-color: $color-light;
+        transition: all 0.1s ease-in;
     }
+
+    & .m-button:hover {
+        font-size: 19px;
+        text-decoration:none;
+        text-decoration: underline;
+        cursor: pointer;
+      }
 }
 

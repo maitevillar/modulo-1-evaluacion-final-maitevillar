@@ -1,8 +1,8 @@
-.page__aside{
+/*.page__aside{
     background-color: $color-bg-secondary;
 }
 
-.container-item{
+.container-item-aside{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,6 +31,7 @@
         background-color: $color-primary;
         border-radius: 22.5px;
         border: 0;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
         font-size: 20px;
         line-height: 45px;
         font-weight: $font-light;
@@ -40,4 +41,105 @@
         margin-top: 45px;  
         margin-bottom: 30px;
     }
+}*/
+
+.page__aside{
+    background-color: $color-bg-secondary;
+
+    & .container .article{
+        display: grid;
+        grid-template-columns: 1fr 180px 1fr;
+        grid-template-rows: 1fr 138px 138px 138px 90px 1fr;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+
+        & .a-title{
+            font-size: 24px;
+            font-weight: $font-bold;
+            justify-self: center;
+            grid-row: 1/2;
+            grid-column: 1/4;
+        }
+
+        & .article-item-1{
+            text-align: center;
+            align-self: end;
+            grid-row: 2/3;
+            grid-column: 2/3;
+            
+            & .a-subtitle{
+                font-size: 18px;
+                line-height: 30px;
+                font-weight: $font-bold;
+            }
+
+            & .a-par{
+                font-size: 18px;
+                line-height: 30px;
+            }
+        }
+
+        & .article-item-2{
+            text-align: center;
+            align-self: end;
+            grid-row: 3/4;
+            grid-column: 2/3;
+      
+            & .a-subtitle{
+                line-height: 30px;
+                font-weight: $font-bold;
+            }
+
+            & .a-par{
+                font-size: 18px;
+                line-height: 30px;
+            }
+        }
+
+        & .article-item-3{
+            text-align: center;
+            align-self: end;
+            grid-row: 4/5;
+            grid-column: 2/3;
+
+            & .a-subtitle{
+                font-size: 18px;
+                line-height: 30px;
+                font-weight: $font-bold;
+            }
+
+            & .a-par{
+                font-size: 18px;
+                line-height: 30px;
+            }
+        }
+
+        & .buton-aside {
+            text-align: center;
+            align-self: end;
+            grid-row: 5/6;
+            grid-column: 2/3;
+            width: 184px;
+            height: 45px;
+            background-color: $color-primary;
+            border-radius: 22.5px;
+            border: 0;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+            font-size: 20px;
+            line-height: 45px;
+            font-weight: $font-light;
+            text-transform: capitalize;
+            color: $color-light;
+            transition: all 0.1s ease-in;
+        }
+    
+            & .buton-aside:hover {
+                font-size: 19px;
+                text-decoration:none;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+    }
 }
+

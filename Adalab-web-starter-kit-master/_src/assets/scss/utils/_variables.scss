@@ -16,9 +16,8 @@ $font-bold: 700;
 body{
     font-family: $font-family; 
 
-    h1, h2, h3{
+    & .main-title, .a-title, .m-title, .a-subtitle{
         font-family: $font-family-title;
     }
 }
 
-/* no meter elementos: cambiar el h1 por clases*/
