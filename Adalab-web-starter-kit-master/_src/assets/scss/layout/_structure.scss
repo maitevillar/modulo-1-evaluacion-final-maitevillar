@@ -1,4 +1,9 @@
 .container{
     padding: 30px 15px 30px 15px;
-    border: solid 2px red;
+    justify-content: center;
+
+    @include tabletSize{
+        padding: 39px 15px 39px 15px;
+        border: solid 2px green;
+    }
 }

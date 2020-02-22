@@ -27,8 +27,15 @@
     & .container-item {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: initial;
         justify-content: center;
+
+
+        @include tabletSize{
+            flex-direction: row;
+            align-items: left;
+            justify-content: space-between;
+        }
 
         & .links_articles {
             padding-top: 30px;
@@ -70,16 +77,9 @@
             text-align: center;
             font-weight: $font-light;
             color: $color-light;
-        }
-
-        & .welove{
-            display: block;
             padding: 15px 0 10px 0;
-            line-height: 30px;
+            line-height: 15px;
             font-size: 14px;
-            text-align: center;
-            font-weight: $font-light;
-            color: $color-light;
         }
     }
 }
