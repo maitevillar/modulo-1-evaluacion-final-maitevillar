@@ -1,6 +1,6 @@
 .container_hero{
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     background-image: url(../images/cover.jpg);
     background-size: cover;
     background-position: center;
@@ -31,6 +31,14 @@
             font-size: 80px;
             line-height: 106px; 
         }
+
+        @include desktopSize {
+            width: 730px;
+            height: 264px;
+            font-size: 100px;
+            line-height: 132px; 
+        }
+
     }
 
     & .main-subtitle {
@@ -46,6 +54,10 @@
             height: 32px;
             font-size: 24px;
             margin-bottom: 30px;
+        }
+
+        @include desktopSize {
+            width: 730px;
         }
     }
 

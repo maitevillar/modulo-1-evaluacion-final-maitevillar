@@ -3,7 +3,11 @@
     justify-content: center;
 
     @include tabletSize{
-        padding: 39px 15px 39px 15px;
-        border: solid 2px green;
+        padding: 45px 39px 45px 39px;
+    }
+
+    @include desktopSize{
+        padding: 45px 81.2px 45px 81.2px;
+        border: solid 2px purple;
     }
 }
