@@ -14,7 +14,7 @@
         background-image: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%);
     }
 
-    & .main-title {
+    & .m-title {
         width: 290px;
         height: 110px;
         font-size: 42px;
@@ -41,7 +41,7 @@
 
     }
 
-    & .main-subtitle {
+    & .m-subtitle {
         width: 290px;
         height: 21px;
         font-size: 16px;
@@ -61,7 +61,7 @@
         }
     }
 
-    & .button_hero{
+    & .button-hero{
         width: 45px;
         height: 45px;
         background-color: $color-light;
