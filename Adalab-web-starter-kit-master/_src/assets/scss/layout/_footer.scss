@@ -7,7 +7,7 @@
     & .oval{
         display: inline-block;
         position: absolute;
-        left: 44%;
+        left: 46%;
         bottom: -1015px; /*ESTO NO ESTÁ BIEN ES UNA ÑAPA */
         width: 45px;
         height: 45px;
@@ -42,18 +42,19 @@
         height: 405px;
         display: flex;
         flex-direction: column;
-        align-items: initial;
+        align-items: center;
         justify-content: center;
 
 
         @include tabletSize{
-            height: 240px;
+            height: 185px;
             flex-direction: row;
-            align-items: left;
+            align-items: flex-start;
             justify-content: space-between;
+
         }
 
-        @include tabletSize{
+        @include desktopSize{
             padding: 15px 193.8px 15px 193.8px
         }
 
@@ -106,6 +107,7 @@
             height: 60px;
             width: 290px;
             text-align: center;
+            line-height: 25px;
             font-weight: $font-light;
             color: $color-light;
             margin: 30px 0 45px 0;
