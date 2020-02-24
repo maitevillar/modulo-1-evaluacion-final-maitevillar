@@ -7,8 +7,8 @@
     & .oval{
         display: inline-block;
         position: absolute;
-        left: 46%;
-        bottom: -1015px; /*ESTO NO ESTÁ BIEN ES UNA ÑAPA */
+        left: 45%;
+        bottom: -1070px; /*ESTO NO ESTÁ BIEN ES UNA ÑAPA */
         width: 45px;
         height: 45px;
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
@@ -22,12 +22,12 @@
         transition: all 0.1s ease;
 
         @include tabletSize{
-            bottom: -740px;
+            bottom: -790px;
             left: 47%; 
         }
 
         @include desktopSize{
-            bottom: -755px; 
+            bottom: -795px; 
             left: 49%; 
         }
     }
@@ -58,7 +58,7 @@
             padding: 15px 193.8px 15px 193.8px
         }
 
-        & .links_articles {
+        & .links-articles {
             padding-top: 30px;
             margin-top: 0;
             margin-bottom: 0;

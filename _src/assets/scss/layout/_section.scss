@@ -5,14 +5,14 @@
     & .container .section{
         display: grid;
         grid-template-columns: 1fr 180px 1fr;
-        grid-template-rows: 1fr 138px 138px 138px 90px 1fr;
-        padding-bottom: 15px;
+        grid-template-rows: 80px 138px 138px 138px 90px 1fr;
+        padding-bottom: 30px;
         justify-content: center;
         align-items: center;
 
         @include tabletSize{
             grid-template-columns: 1fr 212.2px 1fr 212.2px 1fr 212.2px 1fr;
-            grid-template-rows: 45px 1fr 112px 60px 45px 1fr;
+            grid-template-rows: 90px 1fr 112px 60px 45px 1fr;
         }
 
         @include desktopSize{
