@@ -1,125 +1,45 @@
 
-![Adalab](_src/assets/images/logo-adalab-80px.png)
+# References
 
-# Adalab web starter kit
+## Git
 
-Ahoy! Esta es nuestro Starter Kit en node/gulp para este primer contacto con el desarrollo web
-Incluye SCSS, un sistema de plantillas HTML y un web server.
+Definition from [Wikipedia](https://en.wikipedia.org/wiki/Git):
 
-## Guía de inicio rápido
+> *Git (/ɡɪt/) is a version-control system for tracking changes in computer files and coordinating work on those files among multiple people. It is primarily used for source-code management in software development, but it can be used to keep track of changes in any set of files. As a distributed revision-control system, it is aimed at speed, data integrity, and support for distributed, non-linear workflows.*
 
-Necesitarás instalar [Node.js](https://nodejs.org/) y [Gulp](https://gulpjs.com) para trabajar con este Starter Kit, luego:
+### Learning resources
 
-1. Descarga o clona el repositorio
-2. Instala las dependencias locales con `npm install`
-3. Arranca el kit con `gulp`
+- [Git homepage](https://git-scm.com/)
+- [Git commit best practices](https://medium.com/@nawarpianist/git-commit-best-practices-dab8d722de99)
 
-## Espera, ¿esto se hace siempre?
+### Popular git hosts
 
-> ### Solo una vez al principio en cada ordenador que utilicemos:
+- [GitLab](https://gitlab.com)
+- [GitHub](https://github.com/)
+- [BitBucket](https://bitbucket.org/)
 
-- Instalamos node
-- Instalamos el comando de gulp de forma global para poder usarlo desde cualquier carpeta usando `npm install --global gulp-cli`
+## Web Development
 
-> ### Cada vez que descarguemos o clonemos un repo:
+### Learning resources
 
-- `npm install` para instalar los paquetes necesarios para convertir Sass a CSS, minizarlo, etc.
+- [HTML & CSS is hard](https://internetingishard.com/html-and-css/) - a friendly web development tutorial for complete beginners
+- [Command Line Power User](https://commandlinepoweruser.com/) - video series for web developers on learning a modern command line workflow
 
-> ### Cada vez que estemos trabajando con nuestro código:
 
-- Desde nuestra terminal, ejecutamos el comando `gulp` para que realice la tarea por defecto, que en el caso del `gulpfile.js` que tenemos en adalab-web-starter-kit estará pendiente de nuestros archivos Sass, html y JavaScript y los compilará, minificará y/o recargará el servidor cada vez que hagamos un cambio
+### Software
 
-## Tareas de gulp incluidas
+- [Atom](http://atom.io) - code editor from GitHub, has easy-to-use Git interface
+- [Visual Studio Code](https://code.visualstudio.com/) - code editor from Microsoft, popular with web developers
+- [Sublime Text](https://www.sublimetext.com/) - super fast code editor
+- [Hyper](https://hyper.is/) - extensible and fully customisable terminal
 
-### Inicio de un web server para desarrollo
+### Fonts
+- [Google Fonts](https://fonts.google.com/) - free and easiest to get going quikckly
+- [FontSquirrel](https://www.fontsquirrel.com/) - a long running source for free web fonts
+- [Adobe Typekit](https://fonts.adobe.com/typekit) [PAID] - great source for premium fonts, included in Adobe Cloud subscription
+- [FontPair](https://fontpair.co/) - helps you find nice Google Font pairings
 
-```
-npm start
-```
 
-o lo que en este proyecto es lo mismo:
-
-```
-gulp
-```
-
-Lanza un webserver con BrowserSync y varios watchers estarán pendientes de los archivos SCSS/JS/HTML, en la carpeta **public/**, para recargar el navegador cuando se necesite.
-
-### Versión lista para subir a producción
-
-Para generar los ficheros para producción ejecuta:
-
-```
-npm run docs
-```
-
-o lo que en este proyecto es lo mismo:
-
-```
-gulp docs
-```
-
-En la carpeta **docs/** se generarán los CSS y JS minimizados y sin sourcemaps listos para subir al repo. A continuación súbelos al repo y activa en GitHub Pages la opción **master/docs/**, para que GitHub Pages sirva la página desde la carpeta **docs/**.
-
----
-
-Si quieres generar los ficheros listos para producción y además subirlos a GitHub directamente ejecuta el siguiente comando:
-
-```
-npm run push-docs
-```
-
-Este comando borra la carpeta **docs/**, la vuelve a generar, crea un commit con los nuevos ficheros y hace un `git push`, todo del tirón. ¿Cómo se te queda el cuerpo?. Si quieres saber cómo funciona échale un ojo al fichero `package.json`.
-
-## Flujo de archivos con gulp
-
-Estas tareas de gulp producen el siguiente flujo de archivos:
-
-![Gulp flow](./gulp-flow.png)
-
-## Estructura del proyecto
-
-Nuestro **gulpfile.js** usa un JSON de configuración con las rutas de los archivos a generar/vigilar.
-
-La estructura de carpetas tiene esta pinta:
-
-```
-/
-`- _src
-   |- api
-   |  |- data.json // para crearnos un servidor de datos local
-   |- assets
-   |  |- icons
-   |  |- images
-   |  |- js
-   |  `- scss
-   |     `- core
-   |
-   `- templates
-      `- partials
-
-```
-
-## HTML
-
-Viene incluído el paquete [**gulp-html-partial**](https://www.npmjs.com/package/gulp-html-partial) que nos va a permitir tener un sistema de plantillas html
-
-## Imágenes e iconos
-
-Tenemos en **\_src/** una carpeta para las imágenes del proyecto y una para los iconos como el favicon o los iconos de dispositivos móviles. Estos últimos se generan en la raíz de las carpetas **public/** y **docs/**
-
-## CSS
-
-Viene incluído el paquete [**gulp-combine-mq**](https://www.npmjs.com/package/gulp-combine-mq) que agrupa todas las mediaqueries al final del documento css.
-
-## JS
-
-Podemos usar parciales de JS: en el JSON de configuración, **config.json** especificamos los archivos JS que utilizamos y en el orden que deben procesarse.
-
-## ¿Cómo actualizo si tengo una versión anterior?
-
-En principio puedes descargar todos los archivos fuera de **\_src/** y sustituir los de tu proyecto. Además deberías replicar la estructura de carpetas dentro de **\_src/**.
-
-## Falta algo?
-
-Echas de menos que el kit haga algo en concreto? Pidelo sin problema a través de los Issues o si te animas a mejorarlo mándanos un PR :)
+## Other
+- [List of popular static site generators](https://www.staticgen.com/)
+- [A list of Jekyll plugins](https://github.com/planetjekyll/awesome-jekyll-plugins)

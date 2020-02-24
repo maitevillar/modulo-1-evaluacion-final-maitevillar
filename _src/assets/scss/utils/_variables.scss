@@ -13,8 +13,11 @@ $font-light: 300;
 $font-medium: 500;
 $font-bold: 700;
 
+$main-font-size: 16px;
+
 body{
     font-family: $font-family; 
+    font-size: $main-font-size;
 
     & .main-title, .a-title, .m-title, .a-subtitle{
         font-family: $font-family-title;

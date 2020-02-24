@@ -2,13 +2,13 @@
 .page__footer{
     background-color: $color-secondary;
     width: 100%;
-
+    position: relative;
 
     & .oval{
         display: inline-block;
         position: absolute;
-        left: 45%;
-        bottom: -1070px; /*ESTO NO ESTÁ BIEN ES UNA ÑAPA */
+        top: -22px;
+        left: 46%;
         width: 45px;
         height: 45px;
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
@@ -22,12 +22,10 @@
         transition: all 0.1s ease;
 
         @include tabletSize{
-            bottom: -790px;
             left: 47%; 
         }
 
         @include desktopSize{
-            bottom: -795px; 
             left: 49%; 
         }
     }
@@ -67,7 +65,7 @@
             line-height: 30px;
             color: $color-light;
             font-weight: $font-light;
-            font-size: 16px;
+            font-size: 1rem;
 
             @include tabletSize{
                 width: 210px;
@@ -88,7 +86,7 @@
             font-weight: $font-light;
             line-height: 30px;
             color: $color-light;
-            font-size: 16px;
+            font-size: 1rem;
 
             @include tabletSize{
                 width: 210px;
@@ -99,7 +97,7 @@
 
         & a:hover {
             font-weight: $font-medium;
-            font-size: 15px;
+            font-size: 0.9375rem;
         }
 
         & .f-copy{
@@ -111,7 +109,7 @@
             font-weight: $font-light;
             color: $color-light;
             margin: 30px 0 45px 0;
-            font-size: 14px;
+            font-size: 0.875rem;
 
             @include tabletSize{
                 width: 210px;
